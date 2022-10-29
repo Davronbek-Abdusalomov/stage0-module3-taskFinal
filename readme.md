@@ -7,7 +7,7 @@ You will be given 2 variables and your task will be to print false using those v
             public static void main(String[] args) {
                 int first = 9;
                 int second = -17;
-                //write code here
+                System.out.println(first<second);
             }
         }
 
@@ -17,7 +17,7 @@ In the given code snippet you should pick correct primitive type to allow divisi
 
         public class DivisionByZero {
             public static void main(String[] args) {
-                _ number = 10;
+                float number = 10;
                 System.out.println(number/0);
             }
         }
@@ -31,7 +31,11 @@ Implement program that will print if number is positive true, otherwise false
 
     public class NumbersPrinter {
         public void printIsPositive(int number) {
-    
+     if (number>0){
+            System.out.println(true);
+        }
+        else
+            System.out.println(false);
         }
     }
 
@@ -43,6 +47,11 @@ Revert 3-digit number that will be passed (e.g.: given -> 489, expected -> 984) 
 
         public class NumberReverter {
             public void revert(int number) {
+              int a=number%10;
+        int b=(number%100-a)/10;
+        int c=(number-b*10-a)/100;
+
+        System.out.println(a+""+b+""+c);
             }
         }
 Where number - variable that should be used within the program.
@@ -54,6 +63,13 @@ given number. Code snippet:
 
         public class DigitsSumCalculator {
             public void calculateSum(int number) {
+             int i=4;
+        while(i>0){
+            int remainder = number%10;
+            remainder+=remainder;
+            number=number/10;
+            i++;
+            System.out.println(remainder);
             }
         }
 
@@ -67,6 +83,8 @@ fahrenheit (formula will be required). Code snippet:
 
         public class TemperatureConverter {
             public void toFahrenheit(int temperatureCelsius){
+            float fahrenheit = (float) (temperatureCelsius*1.8+32);
+        System.out.println(fahrenheit);
             }
         }
 
