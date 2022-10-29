@@ -47,7 +47,11 @@ Revert 3-digit number that will be passed (e.g.: given -> 489, expected -> 984) 
 
         public class NumberReverter {
             public void revert(int number) {
-        
+        int a=number%10;
+        int b=(number%100-a)/10;
+        int c=(number-b*10-a)/100;
+
+        System.out.println(abc);
        
             }
         }
