@@ -47,11 +47,8 @@ Revert 3-digit number that will be passed (e.g.: given -> 489, expected -> 984) 
 
         public class NumberReverter {
             public void revert(int number) {
-              int a=number%10;
-        int b=(number%100-a)/10;
-        int c=(number-b*10-a)/100;
-
-        System.out.println(a+""+b+""+c);
+        
+       
             }
         }
 Where number - variable that should be used within the program.
@@ -63,13 +60,7 @@ given number. Code snippet:
 
         public class DigitsSumCalculator {
             public void calculateSum(int number) {
-             int i=4;
-        while(i>0){
-            int remainder = number%10;
-            remainder+=remainder;
-            number=number/10;
-            i++;
-            System.out.println(remainder);
+       
             }
         }
 
